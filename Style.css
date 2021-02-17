@@ -1,5 +1,4 @@
-
-/*------------------------GENERAL-STYLE-------------------*/
+/*---------------------------------GERNERAL STYLE-----------------------------*/
 *{
     box-sizing: border-box;
 }
@@ -18,6 +17,12 @@ a{
 .Column{
     flex-direction: column;
 }
+.Ycenter{
+    align-items: center;
+}
+.Xcenter{
+    justify-content:center;
+}
 .Wrap{
     flex-wrap:wrap;
 }
@@ -27,9 +32,12 @@ a{
 .Nomargin{
     margin:0;
 }
+.Textcenter{
+    text-align: center;
+}
 body{
-   font-family: Arial, Helvetica, sans-serif;
-   background:linear-gradient(to right, rgb(255, 187, 0), rgb(226, 109, 31));
+ font-family: 'Space Grotesk', sans-serif;
+   background-image:linear-gradient(to bottom, rgb(0, 0, 50), rgb(226, 109, 31));
    margin:5%;
 }
 h2{
@@ -40,74 +48,82 @@ hr{
     width:6%;
     border:2px solid orangered;
 }
-
-
-/*------------------------NAVIGATION-------------------*/
-
-
-
+.logo{
+    width:100px;
+    height:100px;
+}
 nav{
-  float: right;
-  width:80%;
+  width:85%;
+  padding-top:2%;
+  padding-right: 15%;
+  padding-left:15%;
   justify-content:space-between;
 }
 nav a{
   color:white;
+  padding-bottom: 10px;
+}
+nav a:hover{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+.burger{
+    display:none;
 }
 main{  
-
    margin:0;
    padding: 0;
    background-color:white;
 }
 
-
-/*------------------------BANNER-----------------------*/
-
+/*---------------------------------BANNER-----------------------------*/
 
 .banner{
     width:100%;
-    height:400px;
+    height: 500px;
     margin-bottom: 2%;
-    background-image: url("");
-    background-color: black;
+    background-image: url("../IMG/space_station_after_undocking.jpg");
+    background-color: darkgray;
+    background-attachment: fixed;
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
+}
+.bannertitle{
+    font-size:42px;
 }
 .bannercontent{
-    width:60%;
+    width:55%;
+    color: white;
 }
 .bannercontent p{
     margin-bottom:5%;
     font-size:22px;
 }
-.bannercontent,.bannercontent a{
-   color: white;
-   text-align: center;
-}
 .bannercontent a{
-    padding:1%;
-    border: 2px solid white;
+    padding:2%;
+    border: 2px solid orangered;
     color: white;
 }
+.bannercontent a:hover{
+    color: white;
+    background-color: orangered;
+    border:2px solid orangered;
+}
+
+/*-------------------------------SECTION INTRODUCTION-----------------------------*/
+
 .introduction{
    width:100%;
 }
-
-
-
-/*---------------------SECTION INTRODUCTION------------------*/
-
 .introduction{
     justify-content: space-between;
+    margin-bottom: 5%;
 }
-.why,.what{   
+.why,.what,.threesliders{   
     width:35%;
     padding-left:5%;
-    height:100%
+    height:100%;
 }
 .highlights{
     font-size:24px;
@@ -116,31 +132,29 @@ main{
 .why a{
     color: orangered;
 }
-.introduction i{
-    color: orangered;
-    font-size: 36px;
+.featuretext h5{
+    margin-bottom: 0;
+}
+.featuretext p,.firsttitle{
+    margin-top:0;
+}
+
+.slider{
+    border:1px solid #ccc;
+    padding:1%;
+    margin:2%;
 }
 
 
-/*------------------------GALLERY-------------------*/
+/*------------------------------SECTION GALLERY-----------------------------*/
 
-
-.gallery figure{
+#gallery figure{
    width:25%;
    height:200px;
    overflow: hidden;
 }
-
-
-/*------------------------GALLERY-MENU-------------------*/
-
-
-
-.gallery img{
-    width:500px;
-}
-.gallerymenu{
-    align-items: center;
+#gallery img{
+    width:400px;
 }
 ul{
     width:70%;
@@ -148,7 +162,6 @@ ul{
     padding-left: 10%;
     color:#ccc;
     justify-content: space-around;
-    align-items: center;
     list-style: none; 
 }
 li:hover{
@@ -159,7 +172,6 @@ li:hover{
     background-color: white;
     color:orangered;
     border: 2px solid orangered;
-    justify-content: center;
     text-align: center;
     text-decoration: none;
     width: 30%;
@@ -167,17 +179,16 @@ li:hover{
     margin-left:55%;
     margin-right: 5%;
 }
-
-
-/*------------------------TESTIMONIALS-------------------*/
-
-
-.testimonials{
-    text-align: center;
+.gallerymenu a:hover{
+    color:white;
+    background-color: orangered;
 }
+
+/*-----------------------------SECTION TESTIMONIALS-----------------------------*/
+
+
 .testimonial1,.testimonial2,.testimonial3{
     height: 250px;
-    align-items:center;  
     padding-left: 25%;
 }
 .testimonial1,.testimonial2{
@@ -192,7 +203,7 @@ li:hover{
 q{
     font-size: 24px;
 }
-.testimonials figure{
+#testimonials figure{
     width:100px;
 }
 .testimonialstext{
@@ -201,31 +212,29 @@ q{
 .becomeourclient{
     color:orangered;
     border: 2px solid orangered;
-    text-decoration: none;
-    justify-content: center;   
+    text-decoration: none;  
     margin-left: 40%;
     margin-right: 40%;
     padding: 1%;
     margin-bottom: 5%;
 }
+.becomeourclient:hover{
+    color:white;
+    background-color: orangered;
+}
 
-
-/*---------------------SECTION BUY--------------------------*/
-
-
+/*----------------------------------SECTION CONTACT-------------------------*/
 .Buy{
     margin-top: 0;
     color: white;
     height:400px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-image: url("../IMG/Mars\ Landing.jpg");
+    background-image: url("../IMG/MARSLANDING.jpg");
     background-color: darkgrey;
     background-blend-mode: darken;
+    background-size: cover;
+    background-attachment: fixed;
     margin-bottom: 5%;
 }
-
 .Buy p{
     width:60%;
     margin-top: 5%;
@@ -235,23 +244,18 @@ q{
     color:white;
     border: 2px solid orangered;
     text-decoration: none;
-    justify-content: center;   
     margin-left: 30%;
     margin-right: 30%;
     padding: 1%;
     margin-bottom: 5%;
 }
-
-
-/*----------------SECTION NEWSLETTER-------------*/
-
-.newsletter{
-    text-align: center;
+.Buy a:hover{
+    color:white;
+    background-color: orangered;
 }
 form{
     height: 500px;
     margin: 5%;
-    justify-content: center;
     text-align: left;
 }
 .formPart1,.formPart2{
@@ -286,7 +290,6 @@ label{
     width:100%;
     height:30%;
 }
-
 .message{
     background-color: rgb(226, 226, 226);
     border: 1px solid white;
@@ -305,11 +308,44 @@ label{
     margin-top: 2%;
     margin-left:2%;
 }
+.submit:hover{
+    color:orangered;
+    background-color: white;
+    border:2px solid orangered;
+}
 
-/*------------------SECTION CONTACT---------------------------*/
+/*---------------------------------SECTION INFO-----------------------------*/
 
-.contact{
+.info{
     background-color: black;
     color:white;
-
+    height:300px;
+}
+.about,.spam,.twitter{
+    width:35%;
+    text-align:left;
+    padding-left: 10%;
+}
+.about a{
+    color: orangered;
+}
+.mailsent{
+    height:50px;
+    background-color:rgb(66, 65, 65);
+    color:white;
+    border:none;
+}
+.spam:nth-child(5){
+    background-color:orangered;
+    color:white;
+}
+.twitter i{
+    color: orangered;
+    font-size: 2em;
+}
+.twitter i:hover{
+   color: white;
+}
+small{
+    color:white;
 }
