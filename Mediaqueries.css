@@ -1,0 +1,40 @@
+
+@media screen and (max-width:768px){
+
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin:0
+    }
+    .logo{
+        width:150px;
+    }
+    nav{
+        display:none;
+    }
+    .burger{
+        display:block;
+    }
+    .bannercontent,.why,.what,.accordion{
+        width:100%;
+    }
+    .introduction{
+        flex-direction: column;
+        padding-right: 5%;
+    }
+    .why,.what,.accordion{
+        text-align: center;
+        width:100%;
+    }
+    #gallery figure{
+        width:50%;
+        height:250px;
+    }
+    .gallerymenu{
+        display:none;
+    }
+   
+}
+
+    
